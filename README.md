@@ -1,6 +1,6 @@
 # Triangle
 
-A quick "Hello, triangle!" example written in C++ using GLFW and OpenGL.
+A quick triangle example written in C++ using GLFW and OpenGL.
 
 ## Installation
 ```
