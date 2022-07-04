@@ -1,5 +1,6 @@
 #include <iostream>
-#include "GL/glew.h"
+#include "glad/gl.h"
+#define GLFW_INCLUDE_NONE
 #include "GLFW/glfw3.h"
 
 const char *vertex_source = "#version 330 core\n"
@@ -37,7 +38,6 @@ void glfw_error_callback(int error, const char *description) {
 }
 
 void glfw_key_callback(GLFWwindow *window, int key, int scancode, int action, int mods) {
-
     if (key == GLFW_KEY_ESCAPE && action == GLFW_PRESS)
         glfwSetWindowShouldClose(window, GLFW_TRUE);
 }
@@ -59,8 +59,8 @@ int main(int argc, char *argv[]) {
     glfwMakeContextCurrent(window);
     glfwSetKeyCallback(window, glfw_key_callback);
 
-    if (glewInit() != GLEW_OK) {
-        std::cerr << "Failed to initialize GLEW!" << std::endl;
+    if (gladLoadGL(glfwGetProcAddress) == 0) {
+        std::cerr << "Failed to initialize GLAD!" << std::endl;
         return -1;
     }
 
