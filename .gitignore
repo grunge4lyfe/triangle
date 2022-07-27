@@ -1,5 +1,3 @@
+.cache/
 build/
 
-# exclude GLAD2 sources
-/glad/*
-!/glad/CMakeLists.txt
