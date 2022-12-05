@@ -9,8 +9,8 @@ set(BUILD_SHARED_LIBS OFF)
 add_subdirectory(lib/glfw)
 include_directories(lib/glfw/include)
 
-add_subdirectory(glad)
-include_directories(glad/include)
+add_subdirectory(lib/glad)
+include_directories(lib/glad/include)
 
 add_executable(triangle src/main.cpp)
 target_link_libraries(triangle glfw glad)

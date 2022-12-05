@@ -1,0 +1,5 @@
+*
+
+# Don't ignore the .gitgnore and CMakeLists.txt files
+!.gitignore
+!CMakeLists.txt
