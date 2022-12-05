@@ -1,4 +1,4 @@
-# Triangle
+# triangle
 
 A quick triangle example written in C++ using GLFW and OpenGL.
 
