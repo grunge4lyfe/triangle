@@ -49,6 +49,11 @@ int main(void) {
         throw std::runtime_error("Failed to initialize GLFW!");
     }
 
+    glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 4);
+    glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 6);
+
+    glfwWindowHint(GLFW_RESIZABLE, false);
+
     GLFWwindow *handle = glfwCreateWindow(800, 600, "Hello, triangle!", nullptr, nullptr);
     if (!handle) {
         throw std::runtime_error("Failed to create GLFW window!");
