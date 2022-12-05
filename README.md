@@ -2,7 +2,7 @@
 
 A quick triangle example written in C++ using GLFW and OpenGL.
 
-![screenshot.png](https://git.sr.ht/~grunge4lyfe/triangle/blob/trunk/media/screenshot.png)
+![screenshot.png](https://raw.githubusercontent.com/grunge4lyfe/triangle/trunk/screenshot.png)
 
 ## Compiling
 ```sh
