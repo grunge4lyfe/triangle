@@ -3,7 +3,6 @@
 #include <stdexcept>
 
 #include "glad/gl.h"
-#define GLFW_INCLUDE_NONE
 #include "GLFW/glfw3.h"
 
 const char *vertex_shader_source = "#version 330 core\n"
